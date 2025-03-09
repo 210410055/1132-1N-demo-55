@@ -8,7 +8,7 @@ const showAlert = document.querySelector('.alert');
 const allLi = document.querySelectorAll('.board li');
 const resetBtn = document.querySelector('.reset');
 // console.log(alert);
-console.log('allLi', allLi);
+// console.log('allLi', allLi);
 
 const checkWin = (player) => {
   let p = [];
@@ -57,8 +57,8 @@ const tieMessage = () => {
     console.log(`checkWin('o')`, checkWin('o'));
     console.log(`checkWin('x')`, checkWin('x'));
 
-// tieMessage();
-// winMessage('o');
+ tieMessage();
+//  winMessage('x');
 
 const reset = () => {
   showAlert.style.display = 'none';

@@ -8,14 +8,14 @@ const showAlert = document.querySelector('.alert');
 const allLi = document.querySelectorAll('.board li');
 const resetBtn = document.querySelector('.reset');
 // console.log(alert);
-// console.log('allLi', allLi);
+console.log('allLi', allLi);
 
 const checkWin = (player) => {
   let p = [];
   allLi.forEach((item) => {
     p.push(item.classList.contains(player));
   });
-  // console.log('p', p);
+  console.log('p', p);
   const [p1, p2, p3, p4, p5, p6, p7, p8, p9] = p;
   if (
     (p1 && p2 && p3) ||
@@ -54,8 +54,8 @@ const tieMessage = () => {
   showAlert.textContent = 'Tie!';
 };
 
-// console.log(`checkWin('o')`, checkWin('o'));
-// console.log(`checkWin('x')`, checkWin('x'));
+    console.log(`checkWin('o')`, checkWin('o'));
+    console.log(`checkWin('x')`, checkWin('x'));
 
 // tieMessage();
 // winMessage('o');

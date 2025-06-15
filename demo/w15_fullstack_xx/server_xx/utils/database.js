@@ -2,9 +2,9 @@ import { Pool } from 'pg';
 
 // const { Pool } = pkg;
 
-let pool;
+let pool ;
 
-// console.log('process.env.DATABASE', process.env.DATABASE);
+console.log('process.env.DATABASE', process.env.DATABASE);
 
 if (process.env.DATABASE === 'LOCAL') {
   pool = new Pool({
@@ -12,18 +12,18 @@ if (process.env.DATABASE === 'LOCAL') {
     port: '5432',
     user: 'postgres',
     password: '0000',
-    database: 'js_demo_xx',
+    database: 'js_demo_55',
   });
 } else if (process.env.DATABASE === 'SUPABASE') {
   pool = new Pool({
-    host: 'aws-0-us-west-1.pooler.supabase.com',
+    host: 'aws-0-ap-southeast-1.pooler.supabase.com',
     port: '5432',
-    user: 'postgres.loxlxwyirrqkjrruqboq',
-    password: 'ZJdpXJXhEqC3CZLF',
+    user: 'postgres.buzehgwiojmmbworgghq',
+    password: 'PtZl35Q7AIJN11M6',
     database: 'postgres',
   });
 }
 
-// console.log('connect database', pool.options);
+console.log('connect database', pool.options);
 
 export default pool;

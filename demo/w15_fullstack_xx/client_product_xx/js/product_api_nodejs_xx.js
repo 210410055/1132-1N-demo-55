@@ -1,6 +1,6 @@
 const productContainer = document.querySelector('.products-container');
 
-const url = 'http://localhost:3000/api/product_xx';
+const url = 'http://localhost:3000/api/product_55';
 
 let products_xx = [];
 
